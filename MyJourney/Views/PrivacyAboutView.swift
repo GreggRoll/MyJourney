@@ -7,6 +7,11 @@ struct PrivacyAboutView: View {
                 Text("My Journey stores your journeys and photos locally and does not upload them to My Journey servers.")
                 Text("The app does not require an account and does not include advertising or third-party analytics.")
                 Text("Exports are created on your device and shared only when you choose where to send them.")
+
+                Link(
+                    "View Full Privacy Policy",
+                    destination: URL(string: "https://greggroll.github.io/MyJourney/privacy/")!
+                )
             }
 
             Section("About") {
