@@ -1,5 +1,7 @@
 # My Journey
 
+[App demo](https://greggroll.github.io/MyJourney/) · [Download on the App Store](https://apps.apple.com/us/app/my-journey-progress-in-pics/id6762496363)
+
 My Journey is an iPhone and iPad SwiftUI app for privacy-first progress photos. All image assets and metadata are intended to stay local to the device. The planned App Store listing name is `My Journey - Progress through pics`. Phase 1 focuses on app structure, onboarding, journey management, settings, privacy/about, and persistence scaffolding.
 
 ## Proposed Structure
@@ -87,3 +89,7 @@ MyJourney/
 
 - The workspace started empty, so this phase includes a fresh SwiftUI iOS project scaffold.
 - Full iPhone target compilation needs Xcode.app. This machine currently only has Command Line Tools active, so project verification beyond source-level review should be done in Xcode.
+
+## GitHub Pages
+
+The app showcase is served from `docs/index.html`, with its images in `docs/assets/`. The privacy policy remains at `docs/privacy/index.html`. GitHub Pages publishes from the root of the `gh-pages` branch. To deploy updates, copy the contents of `docs/` to that branch and push it. No build step is required.

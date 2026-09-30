@@ -3,11 +3,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=privacy/">
-  <title>My Journey — Privacy</title>
-  <link rel="canonical" href="https://greggroll.github.io/MyJourney/privacy/">
+  <meta name="theme-color" content="#f7f5fc">
+  <meta name="description" content="See your progress with My Journey for iPhone and iPad. Capture consistent photos, compare changes, and turn your journey into a GIF or video.">
+  <meta property="og:title" content="My Journey — Progress in Pics">
+  <meta property="og:description" content="Small changes. A bigger picture. Your personal progress photo journal for iPhone and iPad.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://greggroll.github.io/MyJourney/">
+  <meta property="og:image" content="https://greggroll.github.io/MyJourney/assets/app-icon.png">
+  <title>My Journey — Progress in Pics</title>
+  <link rel="canonical" href="https://greggroll.github.io/MyJourney/">
+  <link rel="icon" href="assets/app-icon.png">
+  <style>
+    :root { color-scheme: light; --ink: #252137; --muted: #635c75; --purple: #6538c6; --line: #e4dfed; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f7f5fc; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #ad58ca; outline-offset: 6px; }
+    .wrap { width: min(1100px, calc(100% - 48px)); margin: auto; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 750; font-size: 19px; }
+    .brand img { width: 44px; height: 44px; border-radius: 12px; }
+    nav { display: flex; gap: 24px; font-size: 14px; font-weight: 600; }
+    nav a { text-decoration: none; }
+    .hero { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 70px; padding: 58px 0 80px; }
+    .eyebrow { font-size: 12px; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; color: var(--purple); }
+    h1 { font-size: clamp(44px, 6vw, 76px); line-height: 1.06; letter-spacing: -.055em; margin: 20px 0 26px; }
+    h1 span { color: var(--purple); }
+    .intro { max-width: 460px; font-size: 19px; color: var(--muted); }
+    .download { display: inline-flex; flex-direction: column; background: var(--ink); color: white; border-radius: 14px; padding: 12px 27px; text-decoration: none; line-height: 1.25; margin-top: 20px; box-shadow: 0 8px 24px #25213718; }
+    .download small { font-size: 12px; }
+    .download strong { font-size: 24px; font-weight: 600; }
+    .download:hover { background: var(--purple); }
+    .availability { color: var(--muted); font-size: 13px; margin-top: 16px; }
+    .hero-art { position: relative; display: flex; justify-content: center; border-radius: 40px; background: linear-gradient(140deg, #e9ddfc, #f7e2ef); padding: 32px; }
+    .hero-art img { width: min(100%, 260px); height: auto; border-radius: 23px; box-shadow: 0 22px 40px #542c7330; transform: rotate(3deg); }
+    .section-heading { max-width: 620px; margin-bottom: 32px; }
+    h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -.035em; margin: 12px 0 20px; }
+    .section-heading p, .feature p { color: var(--muted); }
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; padding-bottom: 72px; }
+    .feature { border-top: 1px solid var(--line); padding-top: 22px; }
+    .number { color: var(--purple); font-size: 13px; font-weight: 700; }
+    h3 { font-size: 21px; letter-spacing: -.02em; margin: 10px 0; }
+    .feature p { margin: 0; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; padding-bottom: 72px; }
+    figure { margin: 0; }
+    figure img { display: block; width: 100%; height: auto; border-radius: 20px; }
+    figcaption { font-size: 14px; color: var(--muted); margin-top: 14px; }
+    .closing { padding: 48px 28px; text-align: center; background: #eee8f8; border-radius: 28px; margin-bottom: 48px; }
+    .closing h2 { margin-top: 0; }
+    .closing p { color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 36px; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 13px; }
+    footer div { display: flex; gap: 20px; }
+    @media (max-width: 720px) {
+      .wrap { width: calc(100% - 36px); }
+      nav { gap: 16px; }
+      .hero { grid-template-columns: 1fr; gap: 36px; padding: 32px 0 56px; }
+      .hero-art { padding: 28px; }
+      .hero-art img { width: 220px; }
+      .features { grid-template-columns: 1fr; gap: 24px; padding-bottom: 52px; }
+      .gallery { gap: 14px; grid-template-columns: 1fr; max-width: 340px; margin: auto; }
+      .gallery figure { margin-bottom: 20px; }
+      footer { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
 </head>
 <body>
-  <p><a href="privacy/">View the My Journey Privacy Policy</a></p>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./"><img src="assets/app-icon.png" alt="" width="44" height="44">My Journey</a>
+      <nav aria-label="Main navigation"><a href="#demo">Preview</a><a href="privacy/">Privacy</a></nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow">Your personal progress photo journal</div>
+          <h1 id="hero-title">Small changes.<br><span>A bigger picture.</span></h1>
+          <p class="intro">Progress can be hard to notice day to day. Capture your journey in photos and see just how far you’ve come.</p>
+          <a class="download" href="https://apps.apple.com/us/app/my-journey-progress-in-pics/id6762496363"><small>Download on the</small><strong>App Store ↗</strong></a>
+          <p class="availability">For iPhone and iPad</p>
+        </div>
+        <div class="hero-art"><img src="assets/compare.png" width="397" height="860" alt="My Journey’s comparison screen with a slider between first and latest progress photos."></div>
+      </section>
+      <section aria-labelledby="features-title">
+        <div class="section-heading"><div class="eyebrow">One photo at a time</div><h2 id="features-title">Make your progress visible.</h2></div>
+        <div class="features">
+          <article class="feature"><span class="number">01 / CAPTURE</span><h3>Find your frame.</h3><p>Use your previous photo as an overlay to line up your next shot. A grid and timer help you keep each photo consistent.</p></article>
+          <article class="feature"><span class="number">02 / COMPARE</span><h3>See the difference.</h3><p>Keep your photos together in a journey, revisit your timeline, and slide between two moments to see what’s changed.</p></article>
+          <article class="feature"><span class="number">03 / SHARE</span><h3>Tell your story.</h3><p>Turn your progress into a GIF or video, then share it when you’re ready. Your journey photos are stored locally on your device.</p></article>
+        </div>
+      </section>
+      <section id="demo" aria-labelledby="demo-title">
+        <div class="section-heading"><div class="eyebrow">A look inside</div><h2 id="demo-title">Your journey, in focus.</h2><p>Explore a preview of the app, from your first photo to your latest milestone.</p></div>
+        <div class="gallery">
+          <figure><img src="assets/compare.png" width="397" height="860" loading="lazy" alt="Before and after comparison with a draggable photo divider."><figcaption>Compare two moments and spot the changes.</figcaption></figure>
+          <figure><img src="assets/journey.png" width="397" height="860" loading="lazy" alt="My Journey app preview: make progress a habit."><figcaption>Build a photo timeline, one entry at a time.</figcaption></figure>
+          <figure><img src="assets/privacy.png" width="397" height="860" loading="lazy" alt="My Journey app preview: your journey stays yours."><figcaption>Keep your personal progress close to you.</figcaption></figure>
+        </div>
+      </section>
+      <section class="closing" aria-labelledby="download-title"><h2 id="download-title">Start with one photo.</h2><p>Give yourself a new way to look back — and keep going.</p><a class="download" href="https://apps.apple.com/us/app/my-journey-progress-in-pics/id6762496363"><small>Download on the</small><strong>App Store ↗</strong></a></section>
+    </main>
+    <footer><span>My Journey · Progress in Pics</span><div><a href="privacy/">Privacy policy</a><a href="https://github.com/GreggRoll/MyJourney">GitHub</a></div></footer>
+  </div>
 </body>
 </html>
