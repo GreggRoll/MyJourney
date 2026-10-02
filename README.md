@@ -10,15 +10,17 @@ The planned App Store listing name is `My Journey - Progress through pics`.
   <img src="AppStoreScreenshots/final/iphone/03_your_journey_stays_yours.png" width="30%" alt="My Journey screenshot: your journey stays yours">
 </p>
 
-## Help Build It, Get Premium
+## Open source — help shape My Journey
 
-My Journey is open source, and real contributions are genuinely appreciated.
+My Journey is open source under the [MIT License](LICENSE), and everyone is welcome to help. Bug fixes, new features, accessibility improvements, design, tests, and documentation contributions are all welcome.
 
-If you fix a confirmed issue or submit a pull request that improves the app and gets merged, you will receive a code for the Premium in-app purchase. Premium currently unlocks the Remove Watermark entitlement for exports.
+**Get a free lifetime subscription when your pull request is accepted and merged.** A successful merge request (MR), called a pull request (PR) on GitHub, is one that a maintainer reviews, accepts, and merges into this repository.
 
-Good contributions include bug fixes, accessibility improvements, test coverage, UI polish, privacy or security hardening, documentation, release polish, and thoughtful feature improvements. If you are unsure where to start, check the open issues or open a small proposal before building.
+Start by [opening an issue](https://github.com/GreggRoll/MyJourney/issues) to report a bug or discuss an idea, or fork the repository and submit a focused pull request. For larger changes, discuss the approach in an issue first.
 
-Codes are provided after the contribution is accepted or merged. Availability follows App Store promotional or offer code rules.
+After your PR is merged, ask the maintainer in that PR to arrange your free lifetime subscription to My Journey. Do not post private account or payment details publicly.
+
+See [Contributing](CONTRIBUTING.md) for how to get started and how the reward works.
 
 ## Features
 
@@ -83,7 +85,7 @@ MyJourney/
 - Privacy review, documentation, and release notes.
 - Focused unit/UI test coverage.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to help and how contributor Premium codes work.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to help and how the free lifetime subscription reward works.
 
 ## Current Limitations
 
@@ -98,4 +100,4 @@ Upload-ready marketing images are stored in `AppStoreScreenshots/final` for both
 
 ## License
 
-A license file should be added before wider release so contributors and users know exactly how the code can be used.
+My Journey is open source under the [MIT License](LICENSE).

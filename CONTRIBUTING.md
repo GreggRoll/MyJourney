@@ -2,15 +2,13 @@
 
 Thanks for helping improve My Journey. This project is open source because progress photos are personal, and users should be able to understand and trust what the app does with their images.
 
-## Contributor Premium Codes
+## Free lifetime subscription for a successful PR
 
-If you fix a confirmed issue or submit a pull request that improves the app and it is accepted or merged, you will receive a code for the Premium in-app purchase.
+When your pull request is accepted and merged by a maintainer, you receive a **free lifetime subscription to My Journey** as a thank-you for your contribution.
 
-Premium currently unlocks the Remove Watermark entitlement for exports.
+A merge request (MR) is called a pull request (PR) on GitHub. A successful PR means the maintainer has reviewed, accepted, and merged it into this repository. Opening an issue or submitting a PR alone does not qualify; the PR must be merged.
 
-To claim a code, comment on the merged pull request or accepted issue after the work lands, or contact the maintainer through GitHub. Codes are provided after the contribution is accepted and are subject to App Store promotional or offer code availability.
-
-Qualifying contributions include meaningful bug fixes, feature improvements, accessibility work, privacy or security hardening, test coverage, release polish, screenshots, and documentation improvements. Spam, generated noise, unaccepted changes, or trivial changes made only to claim a code do not qualify.
+After your PR is merged, leave a comment on it asking the maintainer to arrange your lifetime subscription. Keep private account and payment details out of public issues and PRs; coordinate any necessary private details directly with the maintainer.
 
 ## How to Contribute
 
